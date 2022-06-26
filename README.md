@@ -1,2 +1,2 @@
-progect ice-cream
+progect ice-cream modal-franchise
 

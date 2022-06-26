@@ -1,0 +1,75 @@
+.header__item {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header__item:first-child {
+  margin-right: 50px;
+}
+
+.header__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link:hover, .header__link:focus {
+  color: var(--accent-cl);
+}
+
+.header__link:current {
+  color: var(--accent-cl);
+}
+
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__group {
+  margin-left: auto;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adres .list {
+  margin-top: 20px;
+}
+
+.adres-item {
+  color: var(--main-bg-cl);
+  margin-bottom: 9px;
+  -webkit-transition: color var(--fast-anim) var(--timing-function);
+  transition: color var(--fast-anim) var(--timing-function);
+}
+
+.adres .item {
+  margin-bottom: 9px;
+  color: var(--transparent-cl);
+}
+
+.footer .item:hover,
+.footer .item:focus {
+  color: var(--accent-cl);
+}
+
+.adres-item:hover,
+.adres-item:focus {
+  color: var(--accent-cl);
+}
+/*# sourceMappingURL=contacts.css.map */

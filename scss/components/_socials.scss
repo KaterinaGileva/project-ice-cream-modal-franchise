@@ -1,0 +1,85 @@
+/*Посилання на соцмережі*/
+
+/*Team*/
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    
+   @include mq (desktop) {
+    margin-bottom: 30px;  
+} 
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-bg-cl);
+    color: var(--icons-cl);
+    border-radius: 50%;
+
+&:hover,
+&:focus {
+        color: var(--main-bg-cl);
+        background-color: var(--accent-cl);
+    }
+
+}
+
+.socials__icon {
+    display: block;
+    fill: currentColor;
+    margin-bottom: 0;
+}
+
+/*Footer*/
+
+.social-box {
+
+@include mq (desktop) {
+    margin-left: 70px;
+    margin-right: 10px;
+}
+
+@include mq (tablet-only) {
+            margin-right: auto;
+}
+}
+
+.social-box__title {
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+   @include mq (not-desktop) {
+    display:block;
+    text-align: center;
+   }
+}
+
+
+
+
+
+.social-box__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--main-bg-cl);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-cl);
+    }
+}
+

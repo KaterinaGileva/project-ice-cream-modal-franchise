@@ -1,0 +1,103 @@
+/*
+============================
+| Секція "Герой"
+============================
+*/
+.hero {
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    /*height: 600px;*/
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    text-align: left;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    /**
+    |============================
+    | Завантаження звичайного фонового зображення для мобільної версії
+    |============================
+              */
+        background-image: url(../images/hero/hero-fon_sm.jpg),
+            linear-gradient(to bottom, #191c26, #191c26);
+        background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x),
+                linear-gradient(to bottom, #191c26, #191c26);
+    
+        // Завантаження ретінізованого 2х фонового зображення
+        @include mq(retina) {
+            background-image: url(../images/hero/hero-fon_sm@2x.jpg),
+                linear-gradient(to bottom, #191c26, #191c26);
+    
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x),
+                    linear-gradient(to bottom, #191c26, #191c26);
+        }
+    
+        //Завантаження звичайного фонового зображення для планшету 
+        @include mq(tablet) {
+            background-image: url(../images/hero/hero-fon_md.jpg),
+                linear-gradient(to bottom, #191c26, #191c26);
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);
+    
+            // Завантаження ретінізованого 2х фонового зображення
+            @include mq(retina) {
+                background-image: url(../images/hero/hero-fon_md@2x.jpg),
+                    linear-gradient(to bottom, #191c26, #191c26);
+    
+                background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);
+            }
+        }
+    
+        // Завантаження звичайного фонового зображення для десктопної версії 
+        @include mq(desktop) {
+            background-image: url(../images/hero/hero-fon_lg.jpg),
+                linear-gradient(to bottom, #191c26, #191c26);
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);
+    
+            // Завантаження ретінізованого 2х фонового зображення
+            @include mq(retina) {
+                background-image: url(../images/hero/hero-fon_lg@2x.jpg),
+                    linear-gradient(to bottom, #191c26, #191c26);
+    
+                background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);
+            }
+        }
+}
+
+.hero__btn {
+        display: flex;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 32px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        background-color: var(--accent-cl);
+        color: var(--accent-txt-cl);
+        border: 1px solid var(--btn-bg);
+        border-radius: 4px;
+            
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        background-color: var(--btn-bg-cl);
+        }
+    }
+    

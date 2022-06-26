@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/base/js-selector.scss"
+    ],
+    "names": [],
+    "file": "js-selector.css"
+}

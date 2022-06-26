@@ -1,0 +1,9 @@
+.btn {
+    font-family: inherit;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--secondary-txt-cl);
+    transition: background-color var(--fast-anim) var(--timing-function),
+    color var(--fast-anim) var(--timing-function);
+}
